@@ -1,0 +1,77 @@
+.card{
+    width: 38rem;
+   margin-left: 25rem;
+}
+
+.form-control{
+    width: 20%;
+}
+
+
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+ @media (max-width: 1399.98px) {  }
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.98px) { 
+    .card{
+        width: 50.5rem;
+       margin-left: 12rem;
+    }
+  }
+
+ /* `For samsung M31 (tablets, less than 992px) */
+ @media (max-width: 991.98px) { 
+    .card{
+        width: 37.5rem;
+       margin-left: 12rem;
+    }
+  }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 820.98px) { 
+    .card{
+        width: 37.5rem;
+       margin-left: 7rem;
+    }
+  }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) { 
+    .card{
+        width: 37.5rem;
+       margin-left: 5rem;
+    }
+  }
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+    .card{
+        width: 24.5rem;
+       margin-left: 1rem;
+    }
+  }
+
+/* Mobile-L device*/
+ @media (max-width: 425.98px) { 
+    .card{
+        width: 24.5rem;
+       margin-left: 1rem;
+    }
+  }
+
+/* Mobile-M device*/
+ @media (max-width: 375.98px) { 
+    .card{
+        width: 21.5rem;
+       margin-left: 1rem;
+    }
+  }
+
+/* Mobile-S device*/
+ @media (max-width: 320.98px) { 
+    .card{
+        width: 18rem;
+       margin-left: 1rem;
+    }
+  }
+
