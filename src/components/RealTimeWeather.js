@@ -96,11 +96,11 @@ export default function RealTimeWeather() {
           <div>
             {current.is_day === 1 ? (
               <>
-                <p className="is_day">Day</p>
+                <p className="is_day" style={{color:'green'}}>Day</p>
               </>
             ) : (
               <>
-                <p className="is_day">Night</p>
+                <p className="is_day" style={{color:'black'}}>Night</p>
               </>
             )}
           </div>

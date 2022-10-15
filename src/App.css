@@ -43,8 +43,9 @@
 }
 
 .is_day{
-  color: green;
-  font-size: 22px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */

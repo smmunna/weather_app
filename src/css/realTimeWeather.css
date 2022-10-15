@@ -10,14 +10,14 @@
 .card-img-top{
     height: 50px;
     width: 50px;
-    margin-left: 20rem;
-    margin-top: 2%;
+    margin-left: 20.5rem;
+    margin-top: 3%;
 }
 
 .temp_c{
     position: absolute;
-    margin-top: 1%;
-    margin-left: 50%;
+    margin-top: 2%;
+    margin-left: 48%;
     font-size: 40px;
 }
 
@@ -58,6 +58,13 @@
     .card{
         width: 37.5rem;
        margin-left: 7rem;
+       margin-bottom: 3%;
+    }
+    .card-img-top{
+        margin-left: 34%;
+    }
+    .temp_c{
+        margin-left: 45%;
     }
   }
 
@@ -67,22 +74,43 @@
         width: 37.5rem;
        margin-left: 5rem;
     }
+    .card-img-top{
+        margin-left: 18%;
+    }
+    .temp_c{
+        margin-left: 38%;
+    }
   }
 
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) { 
     .card{
         width: 24.5rem;
-       margin-left: 1rem;
+        margin: 2%;
+    }
+    .card-img-top{
+        margin-left: 18%;
+    }
+    .temp_c{
+        margin-left: 38%;
     }
   }
 
 /* Mobile-L device*/
  @media (max-width: 425.98px) { 
     .card{
-        width: 24.5rem;
-       margin-left: 1rem;
+    width: 24.7rem;
+       margin: 2%;
+        border: 1px solid blueviolet;
+      
     }
+    .card-img-top{
+        margin-left: 18%;
+    }
+    .temp_c{
+        margin-left: 38%;
+    }
+   
   }
 
 /* Mobile-M device*/
@@ -91,6 +119,19 @@
         width: 21.5rem;
        margin-left: 1rem;
     }
+    .card-img-top{
+        margin-left: 18%;
+    }
+    .temp_c{
+        margin-left: 38%;
+    }
+    .myinput{
+        padding: 8px;
+        width: 60%;
+    }
+    .btn{
+        padding: 8px;
+    }
   }
 
 /* Mobile-S device*/
@@ -98,6 +139,19 @@
     .card{
         width: 18rem;
        margin-left: 1rem;
+    }
+    .card-img-top{
+        margin-left: 18%;
+    }
+    .temp_c{
+        margin-left: 38%;
+    }
+    .myinput{
+        padding: 8px;
+        width: 60%;
+    }
+    .btn{
+        padding: 8px;
     }
   }
 
