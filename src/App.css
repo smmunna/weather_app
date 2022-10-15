@@ -2,6 +2,9 @@
   text-align: center;
   overflow-x: hidden;
 }
+.card{
+  margin-top: 12px;
+}
 .App h2{
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
@@ -19,10 +22,36 @@
 
 }
 
+.spinner img {
+  height: 300px;
+  width: 300px;
+  margin-top: 5%;
+}
 
+
+.btn{
+  border: 2px solid blue;
+  padding: 12px;
+  margin-left: 5px;
+  border-radius: 12px;
+
+}
+.btn:hover{
+  outline: 1;
+  background-color: blue;
+  color: white;
+}
+
+.is_day{
+  color: green;
+  font-size: 22px;
+}
 
  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
  @media (max-width: 1399.98px) { 
+  .App h2{
+    font-size: 30px;
+  }
   .w-image{
     border-radius: 50%;
   }
@@ -92,9 +121,9 @@
   }
   }
 
+
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) { 
-
   .App h2{
     margin-top: 20px;
     font-size: 34px;
@@ -112,6 +141,7 @@
 
 /* Mobile-L device*/
  @media (max-width: 425.98px) { 
+  
   .App h2{
     margin-top: 20px;
     font-size: 34px;
@@ -124,6 +154,11 @@
     width: 60px;
     margin-right: 0%;
     border-radius: 50%;
+  }
+  .spinner img {
+    height: 150px;
+    width: 150px;
+    margin-top: 40%;
   }
   }
 
