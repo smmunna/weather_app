@@ -139,7 +139,7 @@ export default function RealTimeWeather() {
             )}
           </div>
           <p class="card-text">
-            Here i'm using the weather api for fetching the weather details.
+            Here i'm using the weather api for fetching the weather details. <br /> <sub style={{color:'green'}}><a href="https://www.linkedin.com/in/minhazulabedinmunna/" style={{textDecoration:'none'}}>Made by sm munna Copyright 2022&copy;</a></sub>
           </p>
         </div>
       </div>

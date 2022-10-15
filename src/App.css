@@ -109,6 +109,10 @@
     margin-right: 10%;
     border-radius: 50%;
   }
+  .App h2 sub a{
+    display: none;
+     }
+  
   }
 
  /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -125,6 +129,9 @@
     margin-right: 0%;
     border-radius: 50%;
   }
+  .App h2 sub a{
+    display: none;
+     }
   }
 
 
@@ -142,6 +149,9 @@
     margin-right: 0%;
     border-radius: 50%;
   }
+  .App h2 sub a{
+    display: none;
+     }
 
   }
 
@@ -166,6 +176,9 @@
     width: 150px;
     margin-top: 40%;
   }
+  .App h2 sub a{
+    display: none;
+     }
   }
 
 /* Mobile-M device*/
@@ -182,6 +195,9 @@
     width: 50px;
     margin-right: 0%;
   }
+  .App h2 sub a{
+    display: none;
+     }
   }
 
 /* Mobile-S device*/
@@ -198,6 +214,9 @@
     height: 50px;
     width: 50px;
     margin-right: 0%;
+  }
+  .App h2 sub a{
+ display: none;
   }
 
   }
