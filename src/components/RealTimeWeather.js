@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
@@ -13,6 +14,26 @@ export default function RealTimeWeather() {
   const handleSubmit = () => {
     let mycity = city;
 
+    if(mycity.length===0){
+      alert("Input field is required")
+      return <div>
+          <div className="input">
+          <input
+            type="text"
+            className="myinput"
+            placeholder="Search by city 'Dhaka' "
+            onChange={(e) => {
+              setCity(e.target.value);
+            }}
+            required
+          />
+          <button className="btn" onClick={handleSubmit}>
+            Search
+          </button>
+        </div>
+      </div>
+    }
+
     const options = {
       method: "GET",
       headers: {
@@ -21,13 +42,14 @@ export default function RealTimeWeather() {
       },
     };
 
+
     fetch(
       `https://weatherapi-com.p.rapidapi.com/current.json?q=${mycity}`,
       options
     )
       .then((response) => response.json())
       .then((response) => setLocation(response.location))
-      .catch((err) => console.error(err));
+      .catch((err) => console.error(err)); 
 
     //   Condition
     fetch(
@@ -48,19 +70,22 @@ export default function RealTimeWeather() {
       .catch((err) => console.error(err));
   };
 
-  if (current.length === 0) {
+  if (current.length === 0 && location.name !== city) {
     return (
       <div>
         <div className="input">
           <input
-            type="text" className="myinput"
+            type="text"
+            className="myinput"
             placeholder="Search by city 'Dhaka' "
             onChange={(e) => {
               setCity(e.target.value);
             }}
             required
           />
-          <button className="btn" onClick={handleSubmit}>Search</button>
+          <button className="btn" onClick={handleSubmit}>
+            Search
+          </button>
         </div>
         <div className="spinner">
           <img src={Spinner} alt="Loading.." srcset="" />
@@ -69,23 +94,28 @@ export default function RealTimeWeather() {
     );
   }
 
+
   return (
     <div>
       {/* Card will show the address and details about country and Temperature */}
 
       <div className="input">
         <input
-          type="text" className="myinput"
+          type="text"
+          className="myinput"
           placeholder="Search by city 'Dhaka' "
           onChange={(e) => {
             setCity(e.target.value);
           }}
           required
         />
-        <button className="btn" onClick={handleSubmit}>Search</button>
+        <button className="btn" onClick={handleSubmit}>
+          Search
+        </button>
       </div>
 
       <div class="card">
+          
         <img src={currentCondition.icon} class="card-img-top" alt="..." />{" "}
         <span className="temp_c">{current.temp_c}°C</span>
         <div class="card-body">
@@ -96,17 +126,20 @@ export default function RealTimeWeather() {
           <div>
             {current.is_day === 1 ? (
               <>
-                <p className="is_day" style={{color:'green'}}>Day</p>
+                <p className="is_day" style={{ color: "green" }}>
+                  Day
+                </p>
               </>
             ) : (
               <>
-                <p className="is_day" style={{color:'black'}}>Night</p>
+                <p className="is_day" style={{ color: "black" }}>
+                  Night
+                </p>
               </>
             )}
           </div>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Here i'm using the weather api for fetching the weather details.
           </p>
         </div>
       </div>

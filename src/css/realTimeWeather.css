@@ -33,6 +33,12 @@
    
 }
 
+.error-city{
+    color: red;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
 
  /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
  @media (max-width: 1399.98px) {  }

@@ -14,6 +14,11 @@
   color: #2c3e50;
   float: left;
 }
+.App h2 sub a{
+  color: rgb(211, 198, 198);
+  text-decoration: none;
+  font-size: 10px;
+}
 .w-image{
   height: 100px;
   width: 100px;
